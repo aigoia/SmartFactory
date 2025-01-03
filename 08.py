@@ -6,7 +6,7 @@ if passward_input == "abc123":
 
 number_input = input("숫자를 입력하세여: ")
 
-# 숫자를 입력했는지 숫자가 아닌 문자를 입력했는지 확인이 필요하다
+# 숫자를 입력했는지 문자를 입력했는지 확인이 필요하다
 # 예를들어 6이 아닌 Six를 입력할 가능성이 충분히 있다
 number_input = float(number_input)
 
