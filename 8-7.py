@@ -1,5 +1,4 @@
 while True:
-
     positive_input = input("양의 정수를 입력하세여 ('종료' 입력시 프로그램 종료): ")
     
     if positive_input == "종료":
