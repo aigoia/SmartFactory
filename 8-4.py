@@ -1,6 +1,6 @@
 elif_input = input("점수를 입력하세여: ")
 
-elif_input = float(elif_input)
+elif_input = int(elif_input)
 
 # 음수 입력이 가능한 버전
 if 60 > elif_input:

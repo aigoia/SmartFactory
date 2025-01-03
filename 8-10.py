@@ -1,11 +1,4 @@
-import sys
-
 sum_input = input("어디까지 계산할까여: ")
-
-sum_input = float(sum_input)
-
-if sum_input.is_integer() == False:
-    sys.exit()
 
 sum_input = int(sum_input)
 
