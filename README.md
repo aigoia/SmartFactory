@@ -1,1 +1,1 @@
-# Smart factory Handouts
+# Smart factory handouts
