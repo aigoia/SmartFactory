@@ -16,8 +16,13 @@ class Health:
         print(f"{self._name} private hp: {self.__hp}")
         print(f"{self._name} public hp: {self.hp}")
         
+    def set_hp(self, hp):
+        self.__hp = hp
+        
 test = Health("jone", 50)
 test.exercise(5)
 test.__hp = 10
 test.hp = 10
 test.drink_alcohol(1)
+test.set_hp(10)
+test.exercise(5)
