@@ -13,4 +13,4 @@ mean_math = statistics.mean(score["math"])
 
 print(f"korean mean {mean_korean}")
 print(f"english mean {mean_english}")
-print(f"math mean {mean_math}")
+print(f"korean mean {mean_math}")
