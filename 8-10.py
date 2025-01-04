@@ -6,5 +6,5 @@ result = 0
 for i in range(1, sum_input + 1):
     if i % 2 == 1:
         result = result + i
-        
-print(result)
+
+print(f"1부터 {sum_input}까지의 홀수의 합: {result}")

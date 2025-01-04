@@ -21,8 +21,23 @@ want = int(want)
 city_input = input("도시의 이름을 입력하세요: ")
 
 city_data = [heat for _, city, heat, _ in weather_data if city == city_input]
-mean_heat = lambda data: sum(data) / len(data)
-result = mean_heat(city_data)
 
-if result != None:
-    print(f"{city_input}의 평균 기온: {round(result, 2)}°C")
+mean_heat = lambda data: sum(data) / len(data)
+city_heat = mean_heat(city_data)
+
+min_heat = min(city_data)
+max_heat = max(city_data)
+
+if want == 1:
+    print(f"{city_input}의 평균 기온: {round(city_heat, 2)}°C")
+elif want == 2:
+    print(f"{city_input}의 최고 기온: {round(max_heat, 2)}°C, 최저 기온: {round(min_heat, 2)}°C")
+elif want == 3:
+    pass
+elif want == 4:
+    pass
+elif want == 5:
+    pass
+elif want == 6:
+    pass
+    
