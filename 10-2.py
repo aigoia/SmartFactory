@@ -18,6 +18,6 @@ class Health:
         
 test = Health("jone", 50)
 test.exercise(5)
-test.__hp = 1
-test.hp = 1
+test.__hp = 10
+test.hp = 10
 test.drink_alcohol(1)
