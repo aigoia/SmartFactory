@@ -20,7 +20,6 @@ else:
     elif how == "현금":
         code = 1
 
-
 if years < 8:
     result = pay[code][0]
 elif years < 14:
