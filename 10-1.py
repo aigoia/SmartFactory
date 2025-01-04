@@ -15,9 +15,7 @@ class MathTest:
     def div(self):
         return self.first / self.second if self.second != 0 else None
     
-
 test = MathTest(2, 4)
-
 print(test.add())
 print(test.sub())
 print(test.mul())
