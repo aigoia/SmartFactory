@@ -18,4 +18,4 @@ def remove_drink(vending_machine, drink):
 print(check_machine(vending_machine))
 print(is_drink(vending_machine, '게토레이'))
 print(add_drink(vending_machine, '이프로'))
-print(remove_drink(vending_machine, '레쓰비'))
+print(remove_drink(vending_machine, '생수'))
