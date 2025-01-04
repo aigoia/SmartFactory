@@ -1,1 +1,1 @@
-# Smart factory coding training course
+# Smart factory Handouts
