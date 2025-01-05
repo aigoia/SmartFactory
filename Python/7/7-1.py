@@ -10,9 +10,6 @@ append_rainbow = rainbow
 append_rainbow.append('crimson')
 print(append_rainbow)
 
-deleted_rainbow = []
-deleted_rainbow.append(rainbow[0])
-deleted_rainbow.append(rainbow[1])
-deleted_rainbow.append(rainbow[6])
+deleted_rainbow = [rainbow[0], rainbow[1], rainbow[6]]
 print(deleted_rainbow)
 
