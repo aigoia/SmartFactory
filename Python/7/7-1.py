@@ -1,4 +1,4 @@
-rainbow = ['red', 'oprange', 'yellow', 'green', 'blue', 'indigo', 'purple']
+rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple']
 
 print(rainbow[2-1])
 
