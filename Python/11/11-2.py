@@ -9,8 +9,10 @@ electricity_usage = [
 ]
 
 class ElectricityData(ABC):
+    _total_usage = 0
+    
     def __init__(self, usage_data):
-        self.usage_data = usage_data
+        self.__usage_data = usage_data
 
     @abstractmethod
     def calculate_total_usage(self):
@@ -21,14 +23,28 @@ class ElectricityData(ABC):
         pass
 
 class HomeElectricityData(ElectricityData):
+    ElectricityData._total_usage = 0
+    
+    def __init__(self, usage_data):
+        super().__init__(usage_data)
+    
     def calculate_total_usage(self):
-        return sum(entry["usage"] for entry in self.usage_data)
+        return sum(data["usage"] for data in self.__usage_data)
 
     def get_usage_on_date(self, date):
-        for entry in self.usage_data:
+        for entry in self.__usage_data:
             if entry["date"] == date:
                 return entry["usage"]
         return None
+
+    @property
+    def usage_data(self):
+        return self.__usage_data
+    
+    @usage_data.setter
+    def set_usage_data(self, value):
+        self.__usage_data = value
+    
 
 class ElectricityUtility:
     @staticmethod
