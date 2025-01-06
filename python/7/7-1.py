@@ -7,12 +7,12 @@ sorted_rainbow = rainbow.copy()
 sorted_rainbow.sort()
 print(sorted_rainbow)
 
-another_sorted_rainboe = sorted(rainbow)
-print(another_sorted_rainboe)
+another_sorted_rainbow = sorted(rainbow)
+print(another_sorted_rainbow)
 
-append_rainbow = rainbow.copy()
-append_rainbow.append('crimson')
-print(append_rainbow)
+appended_rainbow = rainbow.copy()
+appended_rainbow.append('crimson')
+print(appended_rainbow)
 
 # 이건 코드가 복잡하다
 pop_rainbow = rainbow.copy()
