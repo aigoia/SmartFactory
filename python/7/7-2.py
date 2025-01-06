@@ -16,3 +16,6 @@ print(student_list)
 # Bob 학생을 딕셔너리에서 삭제한다
 student_list.pop("Bob")
 print(student_list)
+
+# del student_list("Bob")
+# print(student_list)
