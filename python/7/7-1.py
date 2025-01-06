@@ -27,4 +27,3 @@ print(del_rainbow)
 # 지우는걸 반대로 생각해서 남은걸 넣는 다는 걸로 해결
 deleted_rainbow = [rainbow[0], rainbow[1], rainbow[6]]
 print(deleted_rainbow)
-

@@ -9,7 +9,7 @@ electricity_usage = [
 ]
 
 class ElectricityData(ABC):
-    _total_usage = 0
+    __total_usage = 0
     
     def __init__(self, usage_data):
         self.__usage_data = usage_data
@@ -21,9 +21,21 @@ class ElectricityData(ABC):
     @abstractmethod
     def get_usage_on_date(self, date):
         pass
+    
+    @property
+    def usage_data(self):
+        return self.__usage_data
+    
+    @usage_data.setter
+    def set_usage_data(self, value):
+        self.__usage_data = value
+        
+    @property
+    def total_usage(self):
+        return self.__total_usage
 
 class HomeElectricityData(ElectricityData):
-    ElectricityData._total_usage = 0
+    ElectricityData.__total_usage = 0
     
     def __init__(self, usage_data):
         super().__init__(usage_data)
@@ -36,14 +48,6 @@ class HomeElectricityData(ElectricityData):
             if entry["date"] == date:
                 return entry["usage"]
         return None
-
-    @property
-    def usage_data(self):
-        return self.__usage_data
-    
-    @usage_data.setter
-    def set_usage_data(self, value):
-        self.__usage_data = value
     
 
 class ElectricityUtility:
@@ -53,6 +57,11 @@ class ElectricityUtility:
 
 
 home_data = HomeElectricityData(electricity_usage)
+
+print(home_data.usage_data)
+print(home_data.total_usage)
+# print(home_data.__usage_data)
+
 print(f"총 전력 사용량: ")  
 print(f"의 사용량: ")
 print(f"추가후 총전력 사용량: ")  
