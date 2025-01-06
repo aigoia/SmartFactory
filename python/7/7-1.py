@@ -14,12 +14,10 @@ appended_rainbow = rainbow.copy()
 appended_rainbow.append('crimson')
 print(appended_rainbow)
 
-# 이건 코드가 복잡하다
+# 라인이 당겨질때마다 뽑아내는 방법 
 pop_rainbow = rainbow.copy()
-pop_rainbow.pop(2)
-pop_rainbow.pop(2)
-pop_rainbow.pop(2)
-pop_rainbow.pop(2)
+for i in range(4):
+    pop_rainbow.pop(2)
 print(pop_rainbow)
 
 # 제거할게 연속적인걸 활용하는 방법

@@ -13,6 +13,11 @@ appended_rainbow = rainbow.copy()
 appended_rainbow.append('crimson')
 # print(appended_rainbow)
 
+pop_rainbow = rainbow.copy()
+for i in range(4):
+    pop_rainbow.pop(2)
+print(pop_rainbow)
+
 deleted_rainbow = [rainbow[0], rainbow[1], rainbow[6]]
 print(deleted_rainbow)
 
