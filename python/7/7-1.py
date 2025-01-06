@@ -1,8 +1,7 @@
 rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple']
 
 print(rainbow)
-print(rainbow[2-1])
-print(len(rainbow))
+print(f"2: {rainbow[2-1]}")
 
 sorted_rainbow = rainbow.copy()
 sorted_rainbow.sort()
