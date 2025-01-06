@@ -49,12 +49,10 @@ class HomeElectricityData(ElectricityData):
                 return entry["usage"]
         return None
     
-
 class ElectricityUtility:
     @staticmethod
     def find_max(usage_data):
         return max(usage_data, key=lambda x: x["usage"])
-
 
 home_data = HomeElectricityData(electricity_usage)
 
@@ -62,8 +60,8 @@ print(home_data.usage_data)
 print(home_data.total_usage)
 # print(home_data.__usage_data)
 
-print(f"총 전력 사용량: ")  
+print(f"총 전력 사용량: ")
 print(f"의 사용량: ")
-print(f"추가후 총전력 사용량: ")  
+print(f"추가후 총전력 사용량: ")
 print(f"특정 범위 날짜내 사용량: ")
-print(f"가장 높은 사용량: ")  
+print(f"가장 높은 사용량: ")

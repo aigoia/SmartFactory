@@ -35,3 +35,4 @@ if code == 0 or code == 1:
     print(f"{years}세의 {how}요금은 {result}입니다")
 else:
     print("결제방법을 잘못 입력하였습니다")
+    

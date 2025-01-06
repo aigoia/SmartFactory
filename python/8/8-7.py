@@ -26,4 +26,3 @@ while True:
     finally:
         print("양수만 입력하세여")
         continue
-

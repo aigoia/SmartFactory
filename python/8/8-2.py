@@ -4,3 +4,4 @@ if_input = int(if_input)
 
 if if_input % 2 == 0:
     print("짝수 입니다")
+    
