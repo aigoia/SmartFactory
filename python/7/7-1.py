@@ -10,7 +10,7 @@ append_rainbow = rainbow.copy()
 append_rainbow.append('crimson')
 print(append_rainbow)
 
-# 이건 코드가 너무 복잡하다
+# 이건 코드가 복잡하다
 pop_rainbow = rainbow.copy()
 pop_rainbow.pop(2)
 pop_rainbow.pop(2)
