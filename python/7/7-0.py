@@ -1,4 +1,4 @@
-text = "hello"
+text = "Hello Python"
 
 date = "20250106"
 year = date[:4]
@@ -11,3 +11,5 @@ print(day)
 
 print(len(date))
 print(text.count("l"))
+
+print(text.count("p"))
