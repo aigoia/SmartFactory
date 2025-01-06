@@ -1,11 +1,15 @@
 rainbow = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'purple']
 
+print(rainbow)
 print(rainbow[2-1])
 print(len(rainbow))
 
 sorted_rainbow = rainbow.copy()
 sorted_rainbow.sort()
 print(sorted_rainbow)
+
+another_sorted_rainboe = sorted(rainbow)
+print(another_sorted_rainboe)
 
 append_rainbow = rainbow.copy()
 append_rainbow.append('crimson')
