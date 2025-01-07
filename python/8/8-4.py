@@ -15,3 +15,10 @@ else:
     score = "A"
 
 print(f"학점: {score}")
+
+new_score = "F" if score_input < 60 else "D" \
+            if score_input < 70 else "C" \
+            if score_input < 80 else "B" \
+            if score_input < 90 else "A"
+            
+print(f"학점: {new_score}")

@@ -9,21 +9,13 @@ how = input("결제방법을 입력해주세여 (카드 또는 현금): ")
 code = -1
 result = 0
 
-if how == "카드":
-    code = 0
-elif how == "현금":
-    code = 1
+code = 0 if how == "카드" else 1 \
+         if how == "현금" else -1 
 
-if years < 8:
-    result = pay[code][0]
-elif years < 14:
-    result = pay[code][1]
-elif years < 20:
-    result = pay[code][2]
-elif years < 75:
-    result = pay[code][3]
-else:
-    result = pay[code][4]
+result = pay[code][0] if years < 8 else pay[code][1] \
+                      if years < 14 else pay[code][2] \
+                      if years < 20 else pay[code][3] \
+                      if years < 75 else pay[code][4]
 
 if code == 0 or code == 1:
     print(f"{years}세의 {how}요금은 {result}입니다")
