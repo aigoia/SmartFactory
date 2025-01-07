@@ -3,7 +3,6 @@ pay = [[0, 450, 720, 1200, 0],
 
 years = input("나이를 숫자로 입력해주세여: ")
 years = int(years)
-
 how = input("결제방법을 입력해주세여 (카드 또는 현금): ")
 
 code = -1
