@@ -13,12 +13,6 @@ if how == "카드":
     code = 0
 elif how == "현금":
     code = 1
-else:
-    how = input("결제방법을 다시 입력해주세여 (카드 또는 현금): ")
-    if how == "카드":
-        code = 0
-    elif how == "현금":
-        code = 1
 
 if years < 8:
     result = pay[code][0]
