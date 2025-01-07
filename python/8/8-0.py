@@ -8,6 +8,5 @@ grade = "A" if score >= 90 else ("B" if score >= 60 else "c")
 new_grade = "A" if score >= 90 else "B" \
                 if score >= 60 else "c" 
             
-        
 print(grade)
 print(new_grade)

@@ -12,7 +12,7 @@ result = 0
 code = 0 if how == "카드" else 1\
          if how == "현금" else -1
         
-result = pay_list[code][0] if years < 8 else pay_list[code][1]\
+result = pay_list[code][0] if years < 8  else pay_list[code][1]\
                            if years < 14 else pay_list[code][2]\
                            if years < 20 else pay_list[code][3]\
                            if years < 75 else pay_list[code][4]
