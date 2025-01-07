@@ -23,6 +23,6 @@ while True:
             
             print(f"1부터 {positive_input}의 합은 {result}입니다")
         
-    finally:
+    except:
         print("양수만 입력하세여")
         continue
