@@ -17,8 +17,11 @@ result = pay[code][0] if years < 8 else pay[code][1] \
                       if years < 20 else pay[code][3] \
                       if years < 75 else pay[code][4]
 
-if code == 0 or code == 1:
+if code == 0:
     print(f"{years}세의 {how}요금은 {result}입니다")
 else:
-    print("결제방법을 잘못 입력하였습니다")
+    if code == 1:
+        print(f"{years}세의 {how}요금은 {result}입니다")
+    else:
+        print("결제방법을 잘못 입력하였습니다")
     
