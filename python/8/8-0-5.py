@@ -24,3 +24,4 @@ else:
         print(f"{years}세의 현금은 {result}입니다")
     else:
         print("결제방법을 잘못 입력하셨습니다")
+        
