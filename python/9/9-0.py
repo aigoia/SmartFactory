@@ -1,6 +1,9 @@
 def six():
     return 6 
 
+def two():
+    return 2
+
 def plus(a, b):
     return a + b
 
@@ -18,6 +21,9 @@ print(def_six)
 test_plus = plus(2, six())
 print(test_plus)
 
+test_minus = six() - two()
+
+print(test_minus)
 
 def outer():
     def inner():
