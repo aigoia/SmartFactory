@@ -1,33 +1,9 @@
-# def six():
-#     return 6 
+plus = lambda a, b: a + b
 
-# def two():
-#     return 2
+plus_one = lambda a, b: {
+    a + 1,
+    b + 1
+}
 
-# def plus(a, b):
-#     return a + b
-
-# def void():
-#     pass
-
-# print(void())
-
-# int_six = 6
-# def_six = six()
-
-# print(int_six)
-# print(def_six)
-
-# test_plus = plus(2, six())
-# print(test_plus)
-
-# test_minus = six() - two()
-# def_plus = plus(six(), two())
-
-# print(test_minus)
-# print(def_plus)
-
-def intro(name, age, city):
-    print(f"이름은 {name}이고 나이는 {age}이고, 사는 곳은 {city}입니다")
-
-intro(city="Seoul", name="Allie", age=23)
+print(plus(1, 2))
+print(plus_one(1, 2))
