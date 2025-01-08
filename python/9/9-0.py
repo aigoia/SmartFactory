@@ -17,3 +17,9 @@ print(def_six)
 
 test_plus = plus(2, six())
 print(test_plus)
+
+
+def outer():
+    
+    def inner():
+        pass
