@@ -22,9 +22,7 @@ test_plus = plus(2, six())
 print(test_plus)
 
 test_minus = six() - two()
+def_plus = plus(six(), two())
 
 print(test_minus)
-
-def outer():
-    def inner():
-        pass
+print(def_plus)
