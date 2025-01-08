@@ -20,6 +20,5 @@ print(test_plus)
 
 
 def outer():
-    
     def inner():
         pass
