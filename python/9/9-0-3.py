@@ -21,7 +21,8 @@ while True:
     user_type = input("사용자 유형을 선택하세여 \n"
                       "1. 소비자\n"
                       "2. 주인\n"
-                      "0. 종료\n")
+                      "0. 종료\n"
+                      ": ")
     
     if user_type == "1": # 소비자
         drink = input("마시고 싶은 음료? ")
