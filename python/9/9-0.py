@@ -29,4 +29,5 @@
 
 def intro(name, age, city):
     print(f"이름은 {name}이고 나이는 {age}이고, 사는 곳은 {city}입니다")
-    
+
+intro(city="Seoul", name="Allie", age=23)
