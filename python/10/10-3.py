@@ -2,7 +2,8 @@ class Health:
     def __init__(self, name, hp):
         self._name = name
         self.__hp = 50
-        self.hp = 100 if hp > 100 else 1 if hp < 1 else hp 
+        self.hp = 100 if hp > 100 else 1\
+                      if hp <   1 else hp 
 
     def exercise(self, times=1):
         self.__hp = self.__hp + times if self.__hp + times < 100 else 100
