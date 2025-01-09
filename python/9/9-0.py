@@ -1,9 +1,8 @@
-def factorial(n):
-    print("n >>", n)
+def count():
     
-    if n == 1:
-        return 1
-    else:
-        return n * factorial(n - 1)
-    
-print(factorial(3))
+    return (0, 1)
+
+my_list, my_count = count() # 리턴을 두개를 하는 경우 이런식으로 받는다
+
+print(my_list)
+print(my_count)
