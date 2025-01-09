@@ -51,7 +51,7 @@ elif want == 3:
     print(f"{city_input}의 강수량이 있던날: {count_water}일")
 
 elif want == 4:
-    day = input("날짜를 입력하세여: ") 
+    day = input("날짜를 입력하세여: ")
     city = input("도시를 입력하세여: ")
     heat = input("평균기온을 입력하세여: ")
     water = input("강수량을 입력하세여: ")
